@@ -1,0 +1,253 @@
+/*----------------------------------
+    GENERAL
+----------------------------------*/
+
+body {
+    background-color: #eae2cd;
+    font-size: 16px;
+}
+
+span {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: #1e1e1e;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: #1e1e1e;
+}
+
+a {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:hover {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: darkblue;
+    text-decoration: underline;
+}
+
+h1 {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 1.8em;
+    color: darkblue;
+}
+
+h2 {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 1.6em;
+    color: darkblue;
+}
+
+label {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: #1e1e1e;
+    font-size: 1em;
+}
+
+.reservations_form label {
+    padding-top: 10px;
+}
+
+/*----------------------------------
+    HEADER
+----------------------------------*/
+
+header {
+    display: flex;
+    height: 80px;
+    width: 1060px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    width: 50%;
+}
+
+.header-nav {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.header-nav li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+/*----------------------------------
+    INDEX.PHP
+----------------------------------*/
+
+.reservations_and_faq {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.reservations_form {
+    width: 600px;
+}
+
+.reservations_form form {
+    background-color: #f5efe3;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.reservations_form h2 {
+    font-family: Poppins, sans-serif;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.reservations_form input[type=text], input[type=tel], input[type=email], input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 6px 0 16px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.reservations_form input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reservations_form input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.reservations_form div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.span-errors {
+    color: #a20000;
+}
+
+.faq {
+    width: 300px;
+    margin-left: 80px;
+    border-radius: 20px;
+    padding: 40px;
+    background-color: #f5efe3;
+}
+
+.faq h2 {
+    font-family: Poppins, sans-serif;
+    color: darkblue;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.faq ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.faq li {
+    list-style: none;
+}
+
+.cd-faq__item {
+    background-color: #f5efe3;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.cd-faq__items {
+    flex-grow: 1;
+}
+
+.cd-faq_title {
+    font-weight: 600;
+}
+
+/*----------------------------------
+    RESERVATIONS.PHP
+----------------------------------*/
+
+.reservations-table {
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.reservations-table table {
+    width: 1060px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.reservations-table thead {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.reservations-table tbody {
+    background-color: #f5efe3;
+}
+
+.reservations-table tbody tr {
+    border: 1px solid black;
+    border-top-width: 0px;
+    /*padding: 20px;*/
+}
+
+.reservations-table tbody tr:hover {
+    background-color: white;
+}
+
+.reservations-table td {
+    padding: 0 10px;
+    height: 50px;
+}
+
+.reservations-table th {
+    text-align: left;
+    padding: 0 10px;
+    height: 70px;
+}
+
+.reservations-table tfoot td {
+    text-align: center;
+    font-weight: bold;
+}
+
+.reservations-table-icons {
+    margin-bottom: -5px;
+}
+
+.reservations-overview-functions {
+    display: flex;
+    justify-content: space-between;
+}
